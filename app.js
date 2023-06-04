@@ -10,7 +10,7 @@ function sendCategory(index) {
 getNews("all");
 
 function getNews(newsCateogryName) {
-    xhr.open('GET', `https://www.newsapi.org/news?category=${newsCateogryName}`, true);
+    xhr.open('GET', `https://inshortsapi.vercel.app/news?category=${newsCateogryName}`, true);
 
     xhr.getResponseHeader('Content-type', 'application/json');
 
